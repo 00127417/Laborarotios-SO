@@ -160,7 +160,7 @@ bool destroyProcess(int pid){
     int index = 0;
     for(auto slot : RAM){
         index++;
-        if(slot.pid = pid) break;
+        if(slot.pid == pid) break;
     }
     
     //se resta uno al indice para asegurar que se encontro y si el valor es negativo significa que no encontró el proceso
